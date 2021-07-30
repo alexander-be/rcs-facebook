@@ -62,12 +62,25 @@ a {
   left: 12px;
 }
 
+<<<<<<< HEAD
 .navbar .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+.middle {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 574px;
+  align-content: center;
+  align-items: center;
+  margin-left: -130px;
+>>>>>>> 7babe55985353ec0481c962448346536b70b029b
 }
 
 .navbar .middle a {
