@@ -59,13 +59,14 @@ a {
 
 .middle {
   box-sizing: border-box;
-    flex-shrink: 0;
-    font-size: 22px;
-    display: flex;
-    justify-content: space-between;
-    min-width: 574px;
-    align-content: center;
-    align-items: center;
+  flex-shrink: 0;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 574px;
+  align-content: center;
+  align-items: center;
+  margin-left: -130px;
 }
 
 .icon-home, .icon-tv, .icon-market, .icon-group, .icon-puzzle {
