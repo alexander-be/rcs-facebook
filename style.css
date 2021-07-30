@@ -62,39 +62,34 @@ a {
   left: 12px;
 }
 
-<<<<<<< HEAD
 .navbar .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-.middle {
-  box-sizing: border-box;
-  flex-shrink: 0;
-  font-size: 22px;
-  display: flex;
-  justify-content: space-between;
-  min-width: 574px;
-  align-content: center;
-  align-items: center;
-  margin-left: -130px;
->>>>>>> 7babe55985353ec0481c962448346536b70b029b
 }
 
 .navbar .middle a {
   position: relative;
   padding: 10px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.navbar .middle a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
 }
 
 .navbar .middle span {
   font-size: 22px;
-}
-
-.navbar .middle span svg:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
 }
 
 .navbar .right {
@@ -126,6 +121,11 @@ a {
   background: #e5e6eb;
   border-radius: 50%;
   margin-right: 8px;
+}
+
+.navbar .right a:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6);
+          box-shadow: rgba(0, 0, 0, 0.6);
 }
 
 .navbar #amount {
