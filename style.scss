@@ -233,6 +233,49 @@ a {
                     
                 }
             }
+            &__menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+               
+                &_button__lg {
+                    background-color: #E5E6EB;
+                    border-radius: 6px;
+                    border: none;
+                    width: 110px;
+                    height: 36px;
+                    margin-left: 8px;
+                    &:hover {
+                        background-color: #E9F3FE;
+                        
+                    }
+                    &:active {
+                        box-shadow: none;
+                        transform: scale(0.9);
+                        transition: transform 0.2s;
+                    }
+                    }
+                &_button__sm {
+                        width: 48px;
+                        height: 36px;
+                        background-color: #E5E6EB;
+                        border-radius: 6px;
+                        border: none;
+                        margin-left: 8px;
+                        &:hover {
+                            background-color: #E9F3FE;
+                            
+                        }
+                        &:active {
+                            box-shadow: none;
+                            transform: scale(0.9);
+                            transition: transform 0.2s;
+                        }
+                    }
+
+            }
+                
+            
         }
     }
 }
