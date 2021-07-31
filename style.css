@@ -274,6 +274,35 @@ a {
 }
 
 .top .container .usermenu__nav {
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .container .usermenu__nav a {
+  width: auto;
+  margin-top: 3px;
+  padding: 20px 17px;
+  border-bottom: 3px solid transparent;
+  color: #66676B;
+}
+
+.top .container .usermenu__nav a:hover {
+  border-bottom: 3px solid #0572EF;
+}
+
+.top .container .usermenu__nav a i {
+  margin-left: 8px;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
