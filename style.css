@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -182,7 +183,7 @@ a {
   border-radius: 0 0 8px 8px;
 }
 
-.top .userinfo {
+.top .container {
   width: 874px;
   height: 204px;
   margin: auto;
@@ -192,7 +193,59 @@ a {
       grid-template-rows: 142px 61px;
 }
 
-.top .userinfo .usermenu {
+.top .container .userinfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.top .container .userinfo .username {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 132px 1fr;
+      grid-template-columns: 132px 1fr;
+}
+
+.top .container .userinfo .username .userpic {
+  width: 132px;
+  height: 132px;
+  background-color: #303030;
+  border-radius: 100%;
+  position: relative;
+  bottom: 20.75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top .container .userinfo .username .name {
+  line-height: 0.7;
+  margin: 25px 0px 20px 28.75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top .container .userinfo .username .name h3 {
+  color: #66676B;
+}
+
+.top .container .userinfo button {
+  height: 40px;
+  width: 312px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0572EF;
+  -ms-flex-item-align: initial;
+      -ms-grid-row-align: initial;
+      align-self: initial;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-bottom: 28px;
+}
+
+.top .container .usermenu {
   border-top: 1px solid #CFD0D4;
 }
 /*# sourceMappingURL=style.css.map */
