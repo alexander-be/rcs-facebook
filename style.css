@@ -242,10 +242,38 @@ a {
       align-self: flex-end;
   -ms-grid-column-align: end;
       justify-self: end;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
+}
+
+.top .container .userinfo button:hover {
+  -webkit-box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 1px 7px -3px rgba(0, 0, 0, 0.58);
+}
+
+.top .container .userinfo button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .top .container .usermenu {
   border-top: 1px solid #CFD0D4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top .container .usermenu__nav {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
