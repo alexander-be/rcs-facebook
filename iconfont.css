@@ -63,6 +63,7 @@
 }
 .icon-messaging:before {
   content: "\e909";
+  color: #66676b;
 }
 .icon-search:before {
   content: "\e90a";
