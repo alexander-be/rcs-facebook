@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background: #F0F2F5;
 }
 
 a {
@@ -14,6 +15,7 @@ a {
   width: 100%;
   align-items: center;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 .navbar .left {
   display: flex;
@@ -79,6 +81,7 @@ a {
   background: #e5e6eb;
   border-radius: 50%;
   margin-right: 8px;
+  color: #66676B;
 }
 .navbar .right a:hover {
   box-shadow: 0px 1px 7px -3px rgba(0, 0, 0, 0.58);
@@ -87,6 +90,14 @@ a {
   box-shadow: none;
   transform: scale(0.9);
   transition: transform 0.2s;
+}
+.navbar .right a #down-arrow {
+  font-size: 11px;
+  line-height: 14px;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 12px;
+  left: 13px;
 }
 .navbar #amount {
   position: absolute;
@@ -185,18 +196,24 @@ a {
   padding: 20px 17px;
   border-bottom: 3px solid transparent;
   color: #66676B;
+  position: relative;
 }
 .top .container .usermenu__nav a:hover {
   border-bottom: 3px solid #0572EF;
 }
 .top .container .usermenu__nav a i {
   margin-left: 8px;
-  font-size: 12px;
+  position: absolute;
+  margin-bottom: 0px;
+  font-size: 7px;
+  line-height: 3;
 }
 .top .container .usermenu__menu {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: #080808;
+  vertical-align: middle;
 }
 .top .container .usermenu__menu_button__lg {
   background-color: #E5E6EB;
@@ -205,6 +222,13 @@ a {
   width: 110px;
   height: 36px;
   margin-left: 8px;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .top .container .usermenu__menu_button__lg:hover {
   background-color: #E9F3FE;
@@ -214,6 +238,15 @@ a {
   transform: scale(0.9);
   transition: transform 0.2s;
 }
+.top .container .usermenu__menu_button__lg span {
+  font-size: 17px;
+  padding-left: 3px;
+}
+.top .container .usermenu__menu_button__lg #like {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+}
 .top .container .usermenu__menu_button__sm {
   width: 48px;
   height: 36px;
@@ -221,6 +254,9 @@ a {
   border-radius: 6px;
   border: none;
   margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .top .container .usermenu__menu_button__sm:hover {
   background-color: #E9F3FE;
@@ -229,4 +265,67 @@ a {
   box-shadow: none;
   transform: scale(0.9);
   transition: transform 0.2s;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 361px 502px;
+  justify-content: center;
+  grid-gap: 15px;
+  margin-top: 15px;
+}
+.content__left__about {
+  width: auto;
+  height: 733px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.content__left__photos {
+  margin-top: 15px;
+  width: auto;
+  height: 288px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.content__left__videos {
+  margin-top: 15px;
+  width: auto;
+  height: 329px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.content__left__pagetransperacy {
+  margin-top: 15px;
+  margin-bottom: 16px;
+  width: auto;
+  height: 195px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.content__right__new-post {
+  width: auto;
+  height: 113px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.content__right__pinned-post {
+  margin-top: 61px;
+  width: auto;
+  height: 635px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.content__right__other-posts {
+  margin-top: 61px;
+  width: auto;
+  height: 720px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

@@ -63,7 +63,7 @@
 }
 .icon-messaging:before {
   content: "\e909";
-  color: #66676b;
+
 }
 .icon-search:before {
   content: "\e90a";
@@ -144,7 +144,6 @@
 }
 .icon-like:before {
   content: "\e91f";
-  color: #8c939c;
 }
 .icon-create-checkin:before {
   content: "\e920";
