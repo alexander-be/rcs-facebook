@@ -8,6 +8,23 @@ a {
   text-decoration: none;
 }
 
+.profile_small {
+  display: block;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #080808;
+  margin: 12px 6px 12px 12px;
+}
+
+txt {
+  position: absolute;
+  top: -25px;
+  width: 118px;
+  font-size: 15px;
+  color: #66676B;
+}
+
 .navbar {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -315,20 +332,68 @@ a {
   justify-content: center;
   height: auto;
 }
+.content__right .content_header {
+  display: flex;
+  position: relative;
+}
+.content__right .content_header_top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  position: relative;
+  width: 411px;
+  height: 33px;
+}
+.content__right .content_header_profilename {
+  display: flex;
+  width: 137px;
+  height: 33px;
+  flex-direction: column;
+  padding: 0;
+  justify-content: space-between;
+}
+.content__right .content_header #name {
+  font-size: 18px;
+  margin: -3px 0 3px 0;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+  color: #080808;
+}
+.content__right .content_header #tag {
+  color: #66676B;
+  font-size: 13px;
+}
+.content__right .content_header #tag i {
+  top: 1px;
+  right: 5px;
+}
+.content__right .content_text {
+  width: auto;
+  height: auto;
+  margin: 0 16px 6px 16px;
+  font-size: 16px;
+}
+.content__right .post_emoji {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 15px;
+  margin: 13px 0 14px 0;
+}
+.content__right .post_emoji .emoji {
+  width: 126px;
+}
+.content__right .post_emoji a {
+  color: #66676B;
+}
+.content__right .post_emoji a:hover {
+  color: #080808;
+}
 .content__right__new-post {
   width: auto;
   height: 113px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-}
-.content__right__new-post__profile {
-  display: block;
-  width: 41px;
-  height: 41px;
-  border-radius: 50%;
-  background-color: #080808;
-  margin: 12px 6px 12px 12px;
 }
 .content__right__new-post__createpost {
   width: 424px;
@@ -340,6 +405,7 @@ a {
   font-size: 17px;
   font-weight: bold;
   border: none;
+  letter-spacing: -0.3px;
 }
 .content__right__new-post__createpost:hover {
   box-shadow: 0px 1px 7px -3px rgba(0, 0, 0, 0.58);
@@ -371,6 +437,8 @@ a {
   background-color: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .content__right__other-posts {
   margin-top: 61px;

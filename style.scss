@@ -14,6 +14,23 @@ a {
     text-decoration: none;
 }
 
+.profile_small {
+    display: block;
+    width:  41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: $facebook_black;
+    margin: 12px 6px 12px 12px ;
+}
+
+txt {
+    position: absolute;
+    top: -25px;
+    width: 118px;
+    font-size: 15px;
+    color: $facebook_grey;
+}
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -372,15 +389,81 @@ a {
     }
 
     &__right {
-        
-        height: auto;
 
-        .wrapper-createpost {
-        display: flex;
-        justify-content: center;
         height: auto;
+        .wrapper-createpost {
+            display: flex;
+            justify-content: center;
+            height: auto;
+        }
+        .content_header {
+            display: flex;
+            position: relative;
+
+            &_top {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 17px;
+                position: relative;
+                width: 411px;
+                height: 33px;
+            }
+
+            &_profilename {
+                display: flex;
+                width: 137px;
+                height: 33px;
+                flex-direction: column;
+                padding: 0;
+                justify-content: space-between;
+            }
+
+            #name {
+                font-size: 18px;
+                margin: -3px 0 3px 0;
+                letter-spacing: -0.3px;
+                text-decoration: none;
+                color: $facebook_black;
+            }
+
+            #tag {
+                color: $facebook_grey;
+                font-size: 13px;
+                i {
+                    top: 1px;
+                    right: 5px;
+                }
+            }
+            
+        } 
         
-    }
+        .content_text {
+            width: auto;
+            height: auto;
+            margin: 0 16px 6px 16px;
+            font-size: 16px;
+        }
+
+        .post_emoji {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 15px;
+            margin: 13px 0 14px 0;
+        
+            .emoji {
+                width: 126px;
+            }
+            a {
+                color: $facebook_grey;
+                &:hover {
+                    color: $facebook_black;
+                }
+            }
+        }
+        
+        
+
+        
 
         &__new-post {
             width: auto;
@@ -389,14 +472,6 @@ a {
             box-shadow: $content_shadow;
             border-radius: 8px;
 
-            &__profile {
-                display: block;
-                width:  41px;
-                height: 41px;
-                border-radius: 50%;
-                background-color: $facebook_black;
-                margin: 12px 6px 12px 12px ;
-            }
             &__createpost {
                 width:  424px;
                 height: 41px;
@@ -407,6 +482,7 @@ a {
                 font-size: 17px;
                 font-weight: bold;
                 border: none;
+                letter-spacing: -0.3px;
 
                 &:hover { 
                     -webkit-box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.58); 
@@ -445,6 +521,9 @@ a {
             background-color: #FFFFFF;
             box-shadow: $content_shadow;
             border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+
         }
 
         &__other-posts {
