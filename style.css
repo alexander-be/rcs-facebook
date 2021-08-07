@@ -273,6 +273,7 @@ a {
   justify-content: center;
   grid-gap: 15px;
   margin-top: 15px;
+  height: auto;
 }
 .content__left__about {
   width: auto;
@@ -306,12 +307,62 @@ a {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
+.content__right {
+  height: auto;
+}
+.content__right .wrapper-createpost {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
 .content__right__new-post {
   width: auto;
   height: 113px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+}
+.content__right__new-post__profile {
+  display: block;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #080808;
+  margin: 12px 6px 12px 12px;
+}
+.content__right__new-post__createpost {
+  width: 424px;
+  height: 41px;
+  border-radius: 6px;
+  margin: 12px 12px 12px 6px;
+  background-color: #E5E6EB;
+  color: #080808;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+}
+.content__right__new-post__createpost:hover {
+  box-shadow: 0px 1px 7px -3px rgba(0, 0, 0, 0.58);
+}
+.content__right__new-post__createpost:active {
+  box-shadow: none;
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+.content__right__new-post__links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+.content__right__new-post__links span {
+  margin-right: 9px;
+}
+.content__right__new-post__links a {
+  text-decoration: none;
+  color: #66676B;
+}
+.content__right__new-post__links a:hover {
+  font-weight: bold;
 }
 .content__right__pinned-post {
   margin-top: 61px;
