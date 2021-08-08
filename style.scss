@@ -375,6 +375,12 @@ txt {
             background-color: #FFFFFF;
             box-shadow: $content_shadow;
             border-radius: 8px;
+
+            &_box {
+                width: 328px;
+                height: 292px;
+            }
+
         }
 
         &__pagetransperacy {
@@ -385,12 +391,64 @@ txt {
             background-color: #FFFFFF;
             box-shadow: $content_shadow;
             border-radius: 8px;
+            
+            &_box {
+                margin: 17px auto;
+                width: 329px;
+                height: 160px;
+                display: grid;
+                grid-template-rows: 1fr 2fr 1fr;
+
+                &_header {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 2px;
+                    height: 47px;
+                    svg {
+                        padding-right: 8px;
+                    }
+                    h4 {
+                        padding-right: 72px;
+                        font-size: 20px;
+                    }
+                    a {
+                        font-size: 15px;
+                        color: $facebook_blue;
+                    }
+                }
+
+                &_content {
+                    color: $facebook_grey;
+                    font-size: 15px;
+                }
+
+                &_info {
+                    display: flex;
+
+                    .icon-page {
+                        width: 39px;
+                        height: 39px;
+                        background-color: $facebook_light-grey;
+                        border-radius: 100%;
+                        text-align: center;
+                        line-height: 38px;
+                    }
+
+                    .date {
+                        margin-left: 11px;
+                        line-height: 40px;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 
     &__right {
 
         height: auto;
+        overflow: hidden;
+
         .wrapper-createpost {
             display: flex;
             justify-content: center;
@@ -467,7 +525,7 @@ txt {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            height: 42px;
+            height: 40px;
             border-top: 1px solid #CFD0D4;
             border-bottom: 1px solid #CFD0D4;
             margin: 0 14px 0 14px;
@@ -503,6 +561,7 @@ txt {
                 top: 10px;
                 right: 14px;
                 font-size: 15px;
+                color: $facebook_grey;
             }
 
             .view-comment {
@@ -510,6 +569,8 @@ txt {
                 bottom: -5px;
                 left: 11px;
                 font-size: 15px;
+                color: $facebook_grey;
+
             }
             
             .comment_row {
@@ -536,7 +597,9 @@ txt {
                     border: none;
                     outline: none;
                     background-color: #F1F2F5;
+                    position: relative;
                 }
+                
                 span {
                     position: absolute;
                     right: 30px;
@@ -624,14 +687,14 @@ txt {
                 height: 375px;
                 width: 300px;
                 box-sizing: border-box;
-                border: 1px solid $facebook_grey;
+                border: 1px solid #E5E6EB;
                 border-radius: 8px;
                 margin-left: 16px;
                 display: flex;
                 overflow-x: visible;
                 
                 img {
-                    width: 299px;
+                    width: 298px;
                     height: 300px;
                     margin: 0;
                     margin-top: -1px;
@@ -649,7 +712,7 @@ txt {
                 }
 
                 &__box2 {
-                    border: 1px solid $facebook_grey;
+                    border: 1px solid #E5E6EB;
                     border-radius: 8px;
                     margin-left: 16px;
                     overflow-x: visible;
