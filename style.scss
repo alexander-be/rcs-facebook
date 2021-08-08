@@ -619,6 +619,42 @@ txt {
             background-color: #FFFFFF;
             box-shadow: $content_shadow;
             border-radius: 8px;
+
+            &__content {
+                height: 375px;
+                width: 300px;
+                box-sizing: border-box;
+                border: 1px solid $facebook_grey;
+                border-radius: 8px;
+                margin-left: 16px;
+                display: flex;
+                overflow-x: visible;
+                
+                img {
+                    width: 299px;
+                    height: 300px;
+                    margin: 0;
+                    margin-top: -1px;
+                }
+                h5 {
+                    margin: 0;
+                    font-size: 15px;
+                    margin-left: 13px;
+                }
+                p {
+                    margin: 5px;
+                    font-size: 13px;
+                    margin-left: 13px;
+                    margin-bottom: 10px;
+                }
+
+                &__box2 {
+                    border: 1px solid $facebook_grey;
+                    border-radius: 8px;
+                    margin-left: 16px;
+                    overflow-x: visible;
+                }
+            }
         }
     }
 }
