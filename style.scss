@@ -357,44 +357,67 @@ txt {
             background-color: #FFFFFF;
             box-shadow: $content_shadow;
             border-radius: 8px;
-
-            &_wrapper {
-               
-
+            
+            .wrapper {
+                padding: 14px;
+            }
                 &_header {
                     display: flex;
-                    align-items: center;
                     justify-content: space-between;
+                    height: auto;
+
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    a {
+                        color: $facebook_blue;
+                        font-size: 15px;
+                    }
                 }
 
                 &_map {
-
                     position: relative;
+                    width: 329px;
+                    height: 170px;
+                    background-image: url(./content/map.png);
 
-                    &_addressbox {
+                    .addressline {
                         width: 296px;
                         height: 64px;
-                        background-color: #FFFFFF;
-                        border-radius: 5px;
-                        position: absolute;
+                        background-color: #fff;
+                        border-radius: 8px;
+                        border: 1px solid $facebook_light-grey;
+                        position: relative;
                         top: 21px;
                         left: 21px;
-                        display: flex;
-                        flex-direction: row-reverse;
+
+                        svg {
+                            position: absolute;
+                            top: 18px;
+                            left: 18px;
+                            bottom: 26px;
+                        }
+                        a {
+                            position: absolute;
+                            top: 14px;
+                            left: 48px;
+                            color: $facebook_blue;
+                        }
+                        
                     }
-                    svg {
+                    #info {
                         position: absolute;
                         bottom: 15px;
                         left: 14px;
                     }
-                    span {
+                    #pin {
                         position: absolute;
+                        right: 83px;
                         bottom: 34px;
-                        right: 82px;
-                        font-size: 30px;
                     }
                 }
-            }
+            
         }
 
         &__photos {
