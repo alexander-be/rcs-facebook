@@ -366,7 +366,31 @@ txt {
             background-color: #FFFFFF;
             box-shadow: $content_shadow;
             border-radius: 8px;
+
+            &_wrapper {
+                width: 328px;
+                height: 251px;
+                margin-left: 17px;
         }
+        &_title { 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 55px;
+            font-size: 20px; 
+            a {
+                font-size: 15px;
+                color: $facebook_blue;
+            }
+        }
+        .gallery {
+            border-radius: 8px;
+            width: 327px;
+            height: 215px;
+            grid-template-rows: 1fr 1fr 1fr;
+            overflow: hidden;
+        }
+    }
 
         &__videos {
             margin-top: 15px;
@@ -379,6 +403,48 @@ txt {
             &_box {
                 width: 328px;
                 height: 292px;
+                grid-template-rows: auto;
+                margin-left: 17px;
+                position: relative;
+
+                &_title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 55px;
+                    font-size: 20px; 
+                    a {
+                        font-size: 15px;
+                        color: $facebook_blue;
+                    }
+                }
+
+                &_video {
+                    position: relative;
+                     .timecode {
+                        position: absolute;
+                        right: 27px;
+                        bottom: 21px;
+                        color: #fff;
+                     }
+                }
+                &_videotitle {
+                    font-size: 17px;
+                    margin: 7px 0 0 0;
+                    white-space: nowrap;
+                }
+
+                &_likecounter {
+                    margin: 6px 0 9px 0;
+                }
+
+                &_info {
+                    margin: 0px;
+                    position: absolute;
+                    bottom: -30px;
+                    color: $facebook_grey;
+                    font-size: 14px;
+                }
             }
 
         }
