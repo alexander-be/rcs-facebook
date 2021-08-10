@@ -384,6 +384,7 @@ txt {
   display: flex;
   -webkit-margin-end: -6px;
           margin-inline-end: -6px;
+  color: #0572EF;
 }
 .content__left__about_details #details_icons svg {
   position: absolute;
@@ -398,6 +399,9 @@ txt {
 }
 .content__left__about_details svg {
   padding-right: 12px;
+}
+.content__left__about_details a {
+  color: #0572EF;
 }
 .content__left__photos {
   margin-top: 15px;
