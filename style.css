@@ -25,6 +25,11 @@ txt {
   color: #66676B;
 }
 
+.move {
+  position: relative;
+  right: -35px;
+}
+
 .navbar {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -307,6 +312,7 @@ txt {
   justify-content: space-between;
   height: auto;
   padding-bottom: 14px;
+  align-items: center;
 }
 .content__left__about_header span {
   font-size: 20px;
@@ -357,13 +363,32 @@ txt {
 .content__left__about_details {
   padding-left: 0px;
   padding-top: 18px;
-  padding: 18px 1px 0px 0px;
+  padding: 10px 1px 0px 0px;
 }
 .content__left__about_details div {
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   display: flex;
   font-size: 16px;
   align-items: flex-start;
+}
+.content__left__about_details #details_icons {
+  position: relative;
+  margin-left: 30px;
+}
+.content__left__about_details #details_icons a {
+  width: 33px;
+  height: 33px;
+  border: 2px solid #fff;
+  background-color: #0572EF;
+  border-radius: 100%;
+  display: flex;
+  -webkit-margin-end: -6px;
+          margin-inline-end: -6px;
+}
+.content__left__about_details #details_icons svg {
+  position: absolute;
+  right: 48px;
+  bottom: 32px;
 }
 .content__left__about_details p {
   width: -webkit-fit-content;
@@ -393,6 +418,7 @@ txt {
   justify-content: space-between;
   height: 55px;
   font-size: 20px;
+  align-items: center;
 }
 .content__left__photos_title a {
   font-size: 15px;
@@ -426,6 +452,7 @@ txt {
   justify-content: space-between;
   height: 55px;
   font-size: 20px;
+  align-items: center;
 }
 .content__left__videos_box_title a {
   font-size: 15px;
@@ -476,6 +503,7 @@ txt {
   align-items: center;
   margin-top: 2px;
   height: 47px;
+  align-items: center;
 }
 .content__left__pagetransperacy_box_header svg {
   padding-right: 8px;
