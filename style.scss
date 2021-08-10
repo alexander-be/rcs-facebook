@@ -770,6 +770,7 @@ txt {
                 margin-left: 16px;
                 margin-top: 13px;
 
+
                 #profile_xsmall {
                     width: 33px;
                     height: 33px;
@@ -779,13 +780,13 @@ txt {
                 }
 
                 input {
-                    width: 426px;
+                    width: 414px;
                     height: 36px;
                     border-radius: 30px;
-                    border: none;
+                    border: 0;
                     outline: none;
+                    padding-left: 13px;
                     background-color: #F1F2F5;
-                    position: relative;
                 }
                 
                 span {
@@ -870,6 +871,37 @@ txt {
             background-color: #FFFFFF;
             box-shadow: $content_shadow;
             border-radius: 8px;
+            position: relative;
+
+            #next {
+                position: absolute;
+                width: 49px;
+                height: 49px;
+                background-color: #fff;
+                border-radius: 100%;
+                bottom: 359px;
+                right: 7px;
+                border: 1px solid #CFD0D4;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #content_info {
+                position: absolute;
+                width: 31px;
+                height: 31px;
+                background-color: #fff;
+                border-radius: 100%;
+                bottom: 549px;
+                right: 14px;
+                border: 1px solid #CFD0D4;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             &__content {
                 height: 375px;
@@ -880,7 +912,11 @@ txt {
                 margin-left: 16px;
                 display: flex;
                 overflow-x: visible;
+                position: relative;
                 
+                
+
+
                 img {
                     width: 298px;
                     height: 300px;
@@ -896,7 +932,7 @@ txt {
                     margin: 5px;
                     font-size: 13px;
                     margin-left: 13px;
-                    margin-bottom: 10px;
+                    margin-bottom: 12px;
                 }
 
                 &__box2 {
