@@ -365,6 +365,7 @@ txt {
                     display: flex;
                     justify-content: space-between;
                     height: auto;
+                    padding-bottom: 14px;
 
                     span {
                         font-size: 20px;
@@ -415,6 +416,28 @@ txt {
                         position: absolute;
                         right: 83px;
                         bottom: 34px;
+                    }
+                }
+                &_details {
+                    padding-left: 0px;
+                    padding-top: 18px;
+                    padding: 18px 1px 0px 0px;
+
+                    div {
+                        padding-bottom: 17px;
+                        display: flex;
+                        font-size: 16px;
+                        align-items: flex-start;
+                    }
+
+                    p {
+                        width: fit-content;
+                        margin: 0;
+                    }
+
+                    svg {
+                        padding-right: 12px;
+                        
                     }
                 }
             
